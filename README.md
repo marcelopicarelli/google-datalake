@@ -14,11 +14,13 @@ Utilização do Google Cloud Plataform como provedora de serviços de cloud púb
 •	BigQuery – É o serviço gerenciado do Google para Data Warehouse, altamente escalonável, que utiliza ANSI-SQL além de outros componente que agilizam a exploração dos dados pelos Analistas e Cientistas de Dados.
 •	Cloud Datalab – Provê notebooks do Jupyter para explorar e visualizar dados de maneira simples utilizando Python e SQL. É possível gerenciar o notebook através de roles específicas por usuário (IAM) garantindo a granularidade do acesso ao dado.
 •	Cloud Dataproc – O Dataproc é o serviço gerenciado do Google para clusters Hadoop e Spark, como auto-escalonamento, criptografia e segurança embutidas.
-•	Cloud Dataprep – O Dataprep by Trifacta é uma solução de preparação de dados que elimina a necessidade de instalação antecipada de software, gastos com licenciamento, totalmente gerenciado e pode ser escalonado de acordo com a demanda.
 •	Cloud Composer – É o serviço de orquestração de fluxos gerenciado do Google, criado no Apache Airflow. É operado em Python livre de fornecedores, com possibilidades de integrações multi-cloud e nuvem hibrida.
 •	Debezium - Debezium é uma plataforma distribuída de código aberto para a captura de dados alterados (stream) que fornece inúmeros conectores para diversas bases de dados.
-Arquitetura dos Componentes
+
+## Arquitetura dos Componentes
  
+![alt text](https://github.com/marcelopicarelli/google-datalake/blob/main/centauro.png)
+
 ## Ingestão de dados Streaming
 Para ingestão dos dados via API e dados relacionais de banco via stream as tecnologias escolhidas foram Confluent Kafka e Debezium para change data capture dos bancos de dados relacionais.
 Os dados tanto da API, quanto do Debezium serão postados um tópico Kafka que serão transportados para a camada do Datalake pelo Cloud Dataflow.
