@@ -1,0 +1,26 @@
+[
+    {
+        "name": "tube_assembly_id",
+        "type":"STRING"
+    },
+    {
+        "name": "component_id_1",
+        "type":"STRING"
+    },
+    {
+        "name": "quantity_1",
+        "type": "FLOAT"
+    },
+    {
+        "name": "component_id_2",
+        "type":"STRING"
+    },
+    {
+        "name": "quantity_2",
+        "type": "FLOAT"
+    },
+    {
+        "name":"component_id_3",
+        "type":"STRING"
+    }
+]
