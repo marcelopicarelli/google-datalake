@@ -27,7 +27,7 @@ Utilização do Google Cloud Plataform como provedora de serviços de cloud púb
 
 ## Arquitetura dos Componentes
  
-![alt text](https://github.com/marcelopicarelli/google-datalake/blob/main/centauro.png)
+![alt text](https://github.com/marcelopicarelli/google-datalake/blob/main/components.png)
 
 ## Ingestão de dados Streaming
 Para ingestão dos dados via API e dados relacionais de banco via stream as tecnologias escolhidas foram Confluent Kafka e Debezium para change data capture dos bancos de dados relacionais.
